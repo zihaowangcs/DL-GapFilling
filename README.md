@@ -1,6 +1,4 @@
-Here is the translated version of your text, formatted for GitHub:
 
-```markdown
 # DL-GapFilling Overview
 
 DL-GapFilling is a sequence prediction method based on BiLSTM, currently using five self-constructed plant datasets. It also performs well on bacteria and plants. The main data processed by DL-GapFilling is second-generation sequencing data. It aims to identify gaps that other software tools have failed to fill, predict the possible sequences for the gaps using the flank data on both sides of the gaps, and then insert the predicted sequences into the original data. This can significantly improve the filling efficiency of other software.
