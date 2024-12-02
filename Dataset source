@@ -17,3 +17,12 @@ https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013358455.1/
 Oryza longistaminata
 https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR19032663&display=metadata
 https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009805545.1/
+
+
+| Dataset               | Species           | Technology | Accession number | Refseq           | #bases |
+|-----------------------|-------------------|------------|------------------|------------------|--------|
+| Micromonas pusilla    | Mamiellales       | Illumina   | SRR14462380      | GCF_000090985.2  | 1.6G   |
+| Utricularia gibba     | Lamiales          | Illumina   | SRR768652        | GCA_002189035.1  | 1.6G   |
+| Eutrema salsugineum   | Brassicales       | Illumina   | SRR19285165      | GCF_000478725.1  | 1.5G   |
+| Thalictrum thalictroides | Ranunculales    | Illumina   | SRR6869418       | GCA_013358455.1  | 2.3G   |
+| Oryza longistaminata  | Poales            | Illumina   | SRR19032663      | GCA_009805545.1  | 4.2G   |
