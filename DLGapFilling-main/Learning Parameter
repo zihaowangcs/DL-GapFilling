@@ -1,0 +1,16 @@
+| Parameter Category     | Parameter Name       | Default Value                  | Range / Options                   | Description                            |
+|------------------------|-------------------|-------------------------------|----------------------------------|----------------------------------------|
+| Model Architecture     | embedding_dim       | 25                            | Positive integer                 | Dimension of embedding layer           |
+|                        | latent_dim          | 100                           | Positive integer                 | LSTM hidden layer dimension            |
+|                        | cnn_filter          | 32                            | Positive integer                 | Number of CNN filters                  |
+|                        | kernel_size         | 3                             | Positive integer                 | CNN kernel size                        |
+|                        | activation          | 'relu'                        | ['relu', 'softmax']              | Activation function                     |
+| Training               | batch_size          | 64                            | Positive integer                 | Training batch size                     |
+|                        | epochs              | 100                           | Positive integer                 | Number of training epochs               |
+|                        | optimizer           | Adam                          | [Adam, SGD, etc.]                | Optimizer                               |
+|                        | loss                | 'categorical_crossentropy'    | -                                | Loss function                            |
+|                        | metrics             | ['accuracy']                  | -                                | Evaluation metrics                       |
+| Prediction             | beam_length         | 16                            | Positive integer                 | Beam search width                        |
+|                        | min_seed_length     | -                             | Positive integer                 | Minimum seed sequence length            |
+| Regularization         | early_stopping      | False                         | [True, False]                    | Whether to use early stopping           |
+|                        | patience            | 200                           | Positive integer                 | Number of epochs to wait for early stop|
