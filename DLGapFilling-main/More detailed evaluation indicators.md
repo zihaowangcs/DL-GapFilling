@@ -16,8 +16,9 @@ Each prediction record has the following fields:
 
 ### Accuracy (Per-Base Accuracy)
 
+
 $$
-\text{Accuracy} = \frac{\text{matches}}{\text{total\_bases\_compared}}
+\mathrm{Accuracy} = \frac{\mathrm{matches}}{\mathrm{total\_bases\_compared}}
 $$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Accuracy = 0**
@@ -28,7 +29,7 @@ $$
 ### Precision (Positive Predictive Value)
 
 $$
-\text{Precision} = \frac{\text{matches}}{\text{matches} + \text{mismatches}}
+\mathrm{Precision} = \frac{\mathrm{matches}}{\mathrm{matches} + \mathrm{mismatches}}
 $$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Precision = 0**
