@@ -28,9 +28,7 @@ $$
 
 ### Precision (Positive Predictive Value)
 
-$$
-\mathrm{Precision} = \frac{\mathrm{matches}}{\mathrm{matches} + \mathrm{mismatches}}
-$$
+![Precision](https://latex.codecogs.com/png.latex?\mathrm{Precision}%20=%20\frac{\mathrm{matches}}{\mathrm{matches}%20+%20\mathrm{mismatches}})
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Precision = 0**
 - If `percent_identity == 0` and `is_fixed == 0` → **Not computed** (no prediction made)
@@ -39,9 +37,7 @@ $$
 
 ### Recall (Sensitivity)
 
-$$
-\text{Recall} = \frac{\text{matches}}{\text{target\_alignment\_length}}
-$$
+![Recall](https://latex.codecogs.com/png.latex?\mathrm{Recall}%20=%20\frac{\mathrm{matches}}{\mathrm{target\_alignment\_length}})
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Recall = 0**
 - If `is_fixed == 0` → **Recall = 0**  
