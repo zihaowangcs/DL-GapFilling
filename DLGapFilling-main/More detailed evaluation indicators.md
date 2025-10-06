@@ -18,7 +18,7 @@ Each prediction record has the following fields:
 
 
 $$
-\mathrm{Accuracy} = \frac{\mathrm{matches}}{\mathrm{total\_bases\_compared}}
+\text{Accuracy} = \frac{\text{matches}}{\text{total\_bases\_compared}}
 $$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Accuracy = 0**
@@ -28,7 +28,9 @@ $$
 
 ### Precision (Positive Predictive Value)
 
-![Precision](https://latex.codecogs.com/png.latex?\mathrm{Precision}%20=%20\frac{\mathrm{matches}}{\mathrm{matches}%20+%20\mathrm{mismatches}})
+$$
+\text{Precision} = \frac{\text{matches}}{\text{matches} + \text{mismatches}}
+$$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Precision = 0**
 - If `percent_identity == 0` and `is_fixed == 0` → **Not computed** (no prediction made)
@@ -37,7 +39,9 @@ $$
 
 ### Recall (Sensitivity)
 
-![Recall](https://latex.codecogs.com/png.latex?\mathrm{Recall}%20=%20\frac{\mathrm{matches}}{\mathrm{target\_alignment\_length}})
+$$
+\text{Recall} = \frac{\text{matches}}{\text{target\_alignment\_length}}
+$$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Recall = 0**
 - If `is_fixed == 0` → **Recall = 0**  
