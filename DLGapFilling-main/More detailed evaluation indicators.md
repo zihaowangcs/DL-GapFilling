@@ -18,7 +18,7 @@ Each prediction record has the following fields:
 
 
 $$
-\text{Accuracy} = \frac{\text{matches}}{\text{total\_bases\_compared}}
+\text{Accuracy} = \frac{\text{matches}}{\text{totalBasesCompared}}
 $$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Accuracy = 0**
@@ -40,7 +40,7 @@ $$
 ### Recall (Sensitivity)
 
 $$
-\text{Recall} = \frac{\text{matches}}{\text{target\_alignment\_length}}
+\text{Recall} = \frac{\text{matches}}{\text{targetAlignmentLength}}
 $$
 
 - If `percent_identity == 0` and `is_fixed == 1` → **Recall = 0**
