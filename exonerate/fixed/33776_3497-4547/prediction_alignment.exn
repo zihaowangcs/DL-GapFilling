@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33776_3497-4547/33776_3497-4547_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33776_3497-4547/33776_3497-4547_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33776:3497-4547 [revcomp]
+        Target: NC_013044.1:956752-957785
+         Model: affine:local:dna2dna
+     Raw score: 1149
+   Query range: 233 -> 0
+  Target range: 0 -> 233
+
+ 233 : CTCCGGTATGTCGGACACGTCGAATATCTTCCGGATGTCTTCCAGCGCCTGCTTCATGTTCTCG : 170
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : CTCCGGTATGTCGGACACGTCGAATATCTTCCGGATGTCTTCCAGCGCCTGCTTCATGTtctcg :  64
+
+ 169 : CTCCTCGCGTCCTCCTCCGTCTCCAACTCGTCGACGSWGTCGTCCTTGAAGGCGTCRTCCAYCG : 106
+       ||||||||||||||||||||||||||||||||||||::||||||||||||||||||:||||:||
+  65 : ctcctcgcgtcctcctccgtctccaaCTCGTCGACGCTGTCGTCCTTGAAGGCGTCGTCCATCG : 128
+
+ 105 : AGAACGCCGCCTCCAAGGCGTTCACAGCCTCAGCCTGCGCGTCCATCAGGTAGAACAGGTCGTT :  42
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 129 : AGAACGCCGCCTCCAAGGCGTTCACAGCCTCAGCCTGCGCGTCCATCAGGTAGAACAGGTCGTT : 192
+
+  41 : GAGAGCCTCCGCGGTCAGCGCCTGCTCCTCCTCGCGAGCGG :   1
+       |||||||||||||||||||||||||||||||||||||||||
+ 193 : GAGAGCCTCCGCGGTCAGcgcctgctcctcctcgcgagcgG : 233
+
+vulgar: 33776:3497-4547 233 0 - NC_013044.1:956752-957785 0 233 + 1149 M 233 233
+percent_identity:98.28
+query_start:233
+query_length:250
+query_alignment_length:233
+query_end:0
+target_start:0
+target_end:233
+target_length:233
+target_alignment_length:233
+total_bases_compared:233
+mismatches:4
+matches:229
+cigar: M 233
+-- completed exonerate analysis

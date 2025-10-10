@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33789_1058-2108/33789_1058-2108_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33789_1058-2108/33789_1058-2108_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33789:1058-2108 [revcomp]
+        Target: NC_013039.1:1507465-1508464
+         Model: affine:local:dna2dna
+     Raw score: 975
+   Query range: 202 -> 0
+  Target range: 0 -> 199
+
+ 202 : CTTCGCGAACGCGAGGCCGATGTGGGCTCATTCGCCGAGGGCTGCGGGCTGTCCGACCGTAATT : 139
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : CTTCGCGAACGCGAGGCCGATGTGGGCTCATTCGCCGAGGGCTGCGGGCTGTCCGACCGTAATT :  64
+
+ 138 : TTTTTATCTGCGTTCCAGTTTTTTTTTTTTTTTTTtttGGCGCGCGGCGCGCGGCAGCGCGCCG :  75
+       ||||||||||||||||||   |||||||||||||||||||||||||||||||||||||||||||
+  65 : TTTTTATCTGCGTTCCag---tttttttttttttttttggcgcgcggcgcgcggcagcgcgccg : 125
+
+  74 : CGCGCCGCGGCGCGGCCGACAAGGCCACCTTGAAGCCACGGCGCCCCACAACGTCCGCGGGATC :  11
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 126 : cgcgccgcggcgcggccgacAAGGCCACCTTGAAGCCACGGCGCCCCACAACGTCCGCGGGATC : 189
+
+  10 : CACCGTCGTT :   1
+       ||||||||||
+ 190 : CACCGTCGTT : 199
+
+vulgar: 33789:1058-2108 202 0 - NC_013039.1:1507465-1508464 0 199 + 975 M 82 82 G 3 0 M 117 117
+percent_identity:100.00
+query_start:202
+query_length:250
+query_alignment_length:202
+query_end:0
+target_start:0
+target_end:199
+target_length:199
+target_alignment_length:199
+total_bases_compared:199
+mismatches:0
+matches:199
+cigar: M 82 I 3 M 117
+-- completed exonerate analysis

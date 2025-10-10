@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33536_24424-25449/33536_24424-25449_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33536_24424-25449/33536_24424-25449_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33536:24424-25449
+        Target: NC_013044.1:310984-311985
+         Model: affine:local:dna2dna
+     Raw score: 988
+   Query range: 0 -> 200
+  Target range: 0 -> 201
+
+   1 : GAAGGGGGAACGTCGGGGCGGAGAGCGTGGCGGCCGGGGTTGGGGCGATTGATCTCAACGCCGC :  64
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : GAAGGGGGAACGTCGGGGCGGAGAGCGTGGCGGCCGGGGTTGGGGCGATTGATCTCAACGCCGC :  64
+
+  65 : GCAATGATTGGAATTTGTTTTTCGACAGGGGCGTTT-ggGGGGGGGGGGGAACACGACGTAGTA : 127
+       |||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+  65 : GCAATGATTGGAATTTGTTTTTCGACAGGGGCGTTTggggggggggggggaaCACGACGTAGTA : 128
+
+ 128 : GGACGACACGATGACGTCCCCTCGCGAACGGAGAGGACGTTTTCAATTCAAACGCCAGTTACCA : 191
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 129 : GGACGACACGATGACGTCCCCTCGCGAACGGAGAGGACGTTTTCAATTCAAACGCCAGTTACCA : 192
+
+ 192 : ACACGACGC : 200
+       |||||||||
+ 193 : ACACGACGC : 201
+
+vulgar: 33536:24424-25449 0 200 + NC_013044.1:310984-311985 0 201 + 988 M 100 100 G 0 1 M 100 100
+percent_identity:100.00
+query_start:0
+query_length:225
+query_alignment_length:200
+query_end:200
+target_start:0
+target_end:201
+target_length:201
+target_alignment_length:201
+total_bases_compared:200
+mismatches:0
+matches:200
+cigar: M 100 D 1 M 100
+-- completed exonerate analysis

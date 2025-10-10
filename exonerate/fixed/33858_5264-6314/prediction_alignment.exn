@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33858_5264-6314/33858_5264-6314_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33858_5264-6314/33858_5264-6314_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33858:5264-6314 [revcomp]
+        Target: NC_013038.1:760114-840124
+         Model: affine:local:dna2dna
+     Raw score: 570
+   Query range: 198 -> 12
+  Target range: 70487 -> 70661
+
+   198 : TGTACATATGACTTATATATATATGTATTCTGGATTTCAATCAGG----TTGGAACACTT :   143
+         | ||||| |  ||| | ||   | |||||||||||||||| ||||    |||| ||||||
+ 70488 : TATACAT-T--CTTctgtacgaaggtattctggatttcaaccAGGTTGCTTGGCACACTT : 70544
+
+   142 : TTACGCCGATAACTTATTATAAAATGACAAGTTATCACCTTTAACTTTGGAGCTAAAGGT :    83
+         |||||||||||||   ||||||||||| |||| |||||||||||||||||||||||||||
+ 70545 : TTACGCCGATAAC---TTATAAAATGATAAGTCATCACCTTTAACTTTGGAGCTAAAGGT : 70601
+
+    82 : ACCATTGATTTAATCGTCGTATGGTAACATATATAAGTGTAACATAGTTATCAAATTCAC :    23
+         |||||||||||||||||||||||||   ||      |  ||||||||| |||||||||||
+ 70602 : ACCATTGATTTAATCGTCGTATGGT---AT------GGATAACATAGTCATCAAATTCAC : 70652
+
+    22 : GTTCCAACGT :    13
+         | || || ||
+ 70653 : G-TCTaaggt : 70661
+
+vulgar: 33858:5264-6314 198 12 - NC_013038.1:760114-840124 70487 70661 + 570 M 7 7 G 1 0 M 1 1 G 2 0 M 34 34 G 0 4 M 24 24 G 3 0 M 69 69 G 3 0 M 2 2 G 6 0 M 25 25 G 1 0 M 8 8
+percent_identity:90.59
+query_start:198
+query_length:250
+query_alignment_length:186
+query_end:12
+target_start:70487
+target_end:70661
+target_length:79210
+target_alignment_length:174
+total_bases_compared:170
+mismatches:16
+matches:154
+cigar: M 7 I 1 M 1 I 2 M 34 D 4 M 24 I 3 M 69 I 3 M 2 I 6 M 25 I 1 M 8
+-- completed exonerate analysis

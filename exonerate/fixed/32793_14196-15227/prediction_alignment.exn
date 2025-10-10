@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/32793_14196-15227/32793_14196-15227_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/32793_14196-15227/32793_14196-15227_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 32793:14196-15227 [revcomp]
+        Target: NC_013040.1:1397173-1398181
+         Model: affine:local:dna2dna
+     Raw score: 1040
+   Query range: 208 -> 0
+  Target range: 0 -> 208
+
+ 208 : GCCCAGCCGGCTGATGTCCTTCACGTGGTCCCTGATGGGCGTCTTCACGCACGCCTGCCGGTAC : 145
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : GCCCAGCCGGCTGATGTCCTTCACGTGGTCCCTGATGGGCGTCTTCACGCACGCCTGCCGGTAC :  64
+
+ 144 : AGTCTGTGGTGAATCGAGTCACCGGCGGGGTCGATCGCGTCCAAAAGGGGTTTCGCGTACCCTT :  81
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  65 : AGTCTGTGGTGAATCGAGTCACCGGCGGGGTCGATCGCGTCCAAAAGGGGTTTCGCGTACCCTT : 128
+
+  80 : CCATGCCCGCCGTGAACACGCAAACCTCGGCGAACGTAGCGAGCTGCGCCAGAAACTCTCGCAC :  17
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 129 : CCATGCCCGCCGTGAACACGCAAACCTCGGCGAACGTAGCGAGCTGCGCCAGAAACTCTCGCAC : 192
+
+  16 : GCCCGGTCTCTCGATC :   1
+       ||||||||||||||||
+ 193 : GCCCGGTCTCTCGATC : 208
+
+vulgar: 32793:14196-15227 208 0 - NC_013040.1:1397173-1398181 0 208 + 1040 M 208 208
+percent_identity:100.00
+query_start:208
+query_length:231
+query_alignment_length:208
+query_end:0
+target_start:0
+target_end:208
+target_length:208
+target_alignment_length:208
+total_bases_compared:208
+mismatches:0
+matches:208
+cigar: M 208
+-- completed exonerate analysis

@@ -1,0 +1,39 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33809_11353-12403/33809_11353-12403_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33809_11353-12403/33809_11353-12403_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33809:11353-12403 [revcomp]
+        Target: NC_013049.1:980808-981766
+         Model: affine:local:dna2dna
+     Raw score: 790
+   Query range: 158 -> 0
+  Target range: 0 -> 158
+
+ 158 : CTTCACATGATCCACGACATCCTCTGCTCGCGCGTCAGCTCCGGGCACATCGCGCTTCACATGA :  95
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : CTTCACATGATCCACGACATCCTCTGCTCGCGCGTCAGCTCCGGGCACATCGCGCTTCACATGA :  64
+
+  94 : TCCACGACATCCTCTGCTCGCGCGTCAGCTCCGGGCACATCGCCGCCAGCGCGGGGTCCGAGCT :  31
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  65 : TCCACGACATCCTCTGCTCGCGCGTCAGCTCCGGGCACatcgccgccagcgcggggtcCGAGCT : 128
+
+  30 : CTCCACGATCATCGCGTTGACCCCCGCGGT :   1
+       ||||||||||||||||||||||||||||||
+ 129 : CTCCACGATCATCGCGTTGACCCCCGCGGt : 158
+
+vulgar: 33809:11353-12403 158 0 - NC_013049.1:980808-981766 0 158 + 790 M 158 158
+percent_identity:100.00
+query_start:158
+query_length:250
+query_alignment_length:158
+query_end:0
+target_start:0
+target_end:158
+target_length:158
+target_alignment_length:158
+total_bases_compared:158
+mismatches:0
+matches:158
+cigar: M 158
+-- completed exonerate analysis

@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33806_4976-6026/33806_4976-6026_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33806_4976-6026/33806_4976-6026_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33806:4976-6026
+        Target: NC_013038.1:567117-568159
+         Model: affine:local:dna2dna
+     Raw score: 1210
+   Query range: 0 -> 242
+  Target range: 0 -> 242
+
+   1 : CATATACATACTGAAGCGTGCCACGCGCTGCCAGGAGCGGTTTTTCACATAAGCAAGATGCGCG :  64
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : CATATACATACTGAAGCGTGCCACGCGCTGCCAGGAGCGGTTTTTCACATAAGCAAGATGCGCG :  64
+
+  65 : CTCATGTAGCCGCTGACGCGCGAGTAACAAGCGGCGCGCTGTATCTTTAGGGTCCGCGCCGTGT : 128
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  65 : CTCATgtagccgctgacgcgcgagtaacaagcggcgcgctgtatctttagggtccgcgccgtgt : 128
+
+ 129 : CCTTAGGGGGCGGGGGTTGGGTTTTCAGGGTTTAGAGTTTGAACAGCCGCGAAGCGGCTCGTCA : 192
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 129 : ccTTAGGGGGCGGGGGTTGGGTTTTCAGGGTTTAGAGTTTGAACAGCCGCGAAGCGGCTCGTCA : 192
+
+ 193 : GCCACTCCCTATACATATCCTGAAGCGCGCCACGCCCAAAACACCCGCGA : 242
+       ||||||||||||||||||||||||||||||||||||||||||||||||||
+ 193 : GCCACTCCCTATACATATCCTGAAGCGCGCCACGCCCAAAACACCCGCGA : 242
+
+vulgar: 33806:4976-6026 0 242 + NC_013038.1:567117-568159 0 242 + 1210 M 242 242
+percent_identity:100.00
+query_start:0
+query_length:250
+query_alignment_length:242
+query_end:242
+target_start:0
+target_end:242
+target_length:242
+target_alignment_length:242
+total_bases_compared:242
+mismatches:0
+matches:242
+cigar: M 242
+-- completed exonerate analysis

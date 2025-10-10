@@ -1,0 +1,39 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33827_4552-5602/33827_4552-5602_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33827_4552-5602/33827_4552-5602_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33827:4552-5602
+        Target: NC_013038.1:1180452-1181437
+         Model: affine:local:dna2dna
+     Raw score: 653
+   Query range: 0 -> 181
+  Target range: 0 -> 178
+
+   1 : AATGTAAATATCAAACCTTATTTTAAATACCCATTTATATGAGTAAACATTGTGTgacaactat :  64
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : AATGTAAATATCAAACCTTATTTTAAATACCCATTTATATGAGTAAACATTgtgtgacaactat :  64
+
+  65 : atggaacgctgactcaagattctcgagctaaaaawycaaaaatgtsracaactrtatgkarcga : 128
+       ||||||||||||||||||||||||||||||||||::|||||||||::|||| |:||||:|:|| 
+  65 : atgGAACGCTGACTCAAGATTCTCGAGCTAAAAATCCAAAAATGTCAACAA-TGTATGGAACGG : 127
+
+ 129 : mtagaccrtcgttcttratttaaygrtgtma--aaaatgycgacaatstacggaa : 181
+       :|||||| |||  |||:| | ||:|:|  :|    | ||: ||| || || ||||
+ 128 : ATAGACCTTCGAccttga-taaacgataccaggtgattgt-GAC-ATTTA-GGAA : 178
+
+vulgar: 33827:4552-5602 0 181 + NC_013038.1:1180452-1181437 0 178 + 653 M 115 115 G 1 0 M 30 30 G 1 0 M 12 12 G 0 2 M 7 7 G 1 0 M 3 3 G 1 0 M 5 5 G 1 0 M 4 4
+percent_identity:86.36
+query_start:0
+query_length:250
+query_alignment_length:181
+query_end:181
+target_start:0
+target_end:178
+target_length:185
+target_alignment_length:178
+total_bases_compared:176
+mismatches:24
+matches:152
+cigar: M 115 I 1 M 30 I 1 M 12 D 2 M 7 I 1 M 3 I 1 M 5 I 1 M 4
+-- completed exonerate analysis

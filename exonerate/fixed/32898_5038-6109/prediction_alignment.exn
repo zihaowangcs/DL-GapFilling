@@ -1,0 +1,47 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/32898_5038-6109/32898_5038-6109_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/32898_5038-6109/32898_5038-6109_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 32898:5038-6109
+        Target: NC_013053.1:469556-470616
+         Model: affine:local:dna2dna
+     Raw score: 1272
+   Query range: 0 -> 263
+  Target range: 0 -> 260
+
+   1 : TCGCCACACCGAAGGGCGCAAAGCCGGATCGCACGCTCGGTCCCGCCTTTCGACCCCGGCAGCA :  64
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : tcgccacaCCGAAGGGCGCAAAGCCGGATCGCACGCTCGGTCCCGCCTTTCGACCCCGGCAGCA :  64
+
+  65 : CCCGATCGCGGCTCGCGAACCCGGCCGGTTCCCCCCGCCTCGAACGCGCCCGGCCCAACGCACT : 128
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  65 : CCCGATCGCGGCTCGCGAACCCGGCCGGTTCCCcccgcctcgaacgcgcccggcccaacgcact : 128
+
+ 129 : CGCCSCGCGCCCYTTTGaaaAAAAAAAAAAAacAACCGCCGTTGCATGCGCAAGATGGCTGCGC : 192
+       ||||:|||||||:||||   ||||||||||||||||||||||||||||||||||||||||||||
+ 129 : cgccgcgcgcccttTTG---AAAAAAAAAAAACAACCGCCGTTGCATGCGCAAGATGGCTGCGC : 189
+
+ 193 : TCTGCCAGGCCGTCGGCTCCTTCCTCCGCCCCGTCGCGGCGTCCTCATCCGCGGGCGCGTCCCG : 256
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 190 : TCTGCCAGGCCGTCGGCTCCTTCctccgccccgtcgcggcgtcctcatccgcgggcgcgtcccg : 253
+
+ 257 : CCCCGGC : 263
+       |||||||
+ 254 : ccccggc : 260
+
+vulgar: 32898:5038-6109 0 263 + NC_013053.1:469556-470616 0 260 + 1272 M 145 145 G 3 0 M 115 115
+percent_identity:99.23
+query_start:0
+query_length:271
+query_alignment_length:263
+query_end:263
+target_start:0
+target_end:260
+target_length:260
+target_alignment_length:260
+total_bases_compared:260
+mismatches:2
+matches:258
+cigar: M 145 I 3 M 115
+-- completed exonerate analysis

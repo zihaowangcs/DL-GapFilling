@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33805_11972-13022/33805_11972-13022_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33805_11972-13022/33805_11972-13022_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33805:11972-13022
+        Target: NC_013038.1:1524684-1525700
+         Model: affine:local:dna2dna
+     Raw score: 1080
+   Query range: 0 -> 216
+  Target range: 0 -> 216
+
+   1 : TTTGGGATTGCAGACAAGAGGCATTTCCCGCGCGTAGCGGCGTTGCGCTACGTCTGAGGCCTAC :  64
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   1 : TTTGGGATTGCAGACAAGAGGCATTTCCCGCGCGTAGCGGCGTTGCGCTACGTCTGAGGCCTAC :  64
+
+  65 : GTCTGAGGCGCTACGTCTGTTTTTACGAGTTAATAGACCGTCAACTCGCCAATGAAACCGTAGC : 128
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  65 : GTCTGAGGCGCTACGTCTGTTTTTACGAGTTAATAGACCGTCAACTCGCCAATGAAACCGTAGC : 128
+
+ 129 : TCAGGCGCAACGTCGTTTCGTGCGACGCAAACTCGTCAACACCAATGCGCGCTCCTGACGATGT : 192
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 129 : TCAGGCGCAACGTCGTTTCgtgcgacgcaaactcgtcaacaccaatgcgcgctcctgacgatgt : 192
+
+ 193 : CGTCCTCCATCTTTGGCGCCGAAC : 216
+       ||||||||||||||||||||||||
+ 193 : cgtcctccatctttggcgccgaac : 216
+
+vulgar: 33805:11972-13022 0 216 + NC_013038.1:1524684-1525700 0 216 + 1080 M 216 216
+percent_identity:100.00
+query_start:0
+query_length:250
+query_alignment_length:216
+query_end:216
+target_start:0
+target_end:216
+target_length:216
+target_alignment_length:216
+total_bases_compared:216
+mismatches:0
+matches:216
+cigar: M 216
+-- completed exonerate analysis

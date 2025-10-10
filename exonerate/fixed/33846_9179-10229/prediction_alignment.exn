@@ -1,0 +1,43 @@
+Command line: [exonerate /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33846_9179-10229/33846_9179-10229_gap_flank_prediction_cut.fasta /home/chenyu/wangzihao/micromonas_pusilla/scripts/validateion_gaps_flanks/out/fixed/33846_9179-10229/33846_9179-10229_gap_flank_reference_cut.fasta --ryo percent_identity:%pi\nquery_start:%qab\nquery_length:%ql\nquery_alignment_length:%qal\nquery_end:%qae\ntarget_start:%tab\ntarget_end:%tae\ntarget_length:%tl\ntarget_alignment_length:%tal\ntotal_bases_compared:%et\nmismatches:%em\nmatches:%ei\ncigar:%C\n --model affine:local --exhaustive y --bestn 1]
+Hostname: [FAT-SERVER]
+
+C4 Alignment:
+------------
+         Query: 33846:9179-10229
+        Target: NC_013038.1:1066383-1067407
+         Model: affine:local:dna2dna
+     Raw score: 1100
+   Query range: 0 -> 220
+  Target range: 4 -> 224
+
+   1 : CTACATATATATTATAGTTGTCGCCATTTTTGATTTTTTAGCTCGAGAATCTTGAGTCAGTGTC :  64
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   5 : CTACATATATATTATAGTTGTCGCCATTTTTGATTTTTTAGCTCGAGAATCTTGAGTCAGTGTC :  68
+
+  65 : CCTTATAGTTGTCACACGATGTTTACTCATATAAACGAGTATTTAAATATGGTTGGATATTTAT : 128
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+  69 : CCTTATAGTTGTCACACGATGTTTACTCATATAAACGAGTATTTAAATATGGTTGGATATTTAT : 132
+
+ 129 : TTACATATTTTATTTTTATTAGTACGAACGATGTTAAACTAGTGTTAAACTATATATACGACAG : 192
+       ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ 133 : TTACATATTTTATTTTTATTAGTACGAACGATGTTAAACTAGTGTTAAACTATATATACGACAG : 196
+
+ 193 : TATCGTGCGTATACGTATACACGCATGC : 220
+       ||||||||||||||||||||||||||||
+ 197 : TATCGTGCGTATACGTATACACGCATGC : 224
+
+vulgar: 33846:9179-10229 0 220 + NC_013038.1:1066383-1067407 4 224 + 1100 M 220 220
+percent_identity:100.00
+query_start:0
+query_length:250
+query_alignment_length:220
+query_end:220
+target_start:4
+target_end:224
+target_length:224
+target_alignment_length:220
+total_bases_compared:220
+mismatches:0
+matches:220
+cigar: M 220
+-- completed exonerate analysis
