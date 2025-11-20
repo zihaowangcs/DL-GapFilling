@@ -1,0 +1,30 @@
+Genome Assembly Post-processing (Deep Learning Methods)
+│
+├─ 1. Polishing (Error Correction)
+│   ├─ PEPPER–Margin–DeepVariant
+│   │   ├─ PEPPER: CNN + RNN
+│   │   ├─ Margin: RNN-based HMM
+│   │   └─ DeepVariant: CNN (pileup as images)
+│   ├─ NextPolish / NextPolish2: Neural network candidate base scoring + DL filtering
+│   ├─ DeepConsensus: Transformer / Attention
+│   ├─ Apollo: CNN + Transformer
+│   └─ DeepPolisher: CNN
+│
+├─ 2. Basecalling
+│   ├─ Dorado: Transformer
+│   ├─ Bonito: CTC + CNN + BiRNN (GRU/LSTM)
+│   └─ Chiron: CNN + RNN + CTC
+│
+├─ 3. Gap Closing
+│   ├─ GAPpredict: LSTM
+│   ├─ DLGapcloser: BiLSTM + Homology mapping network
+│   └─ DL-GapFilling: CNN + BiLSTM + BSCEA + Homology mapping
+│
+├─ 4. Haplotype Phasing
+│   └─ DeepTrio: CNN (trio-based)
+│
+├─ 5. Contamination Removal
+│   └─ DeepMicrobes: CNN + Attention
+│
+└─ 6. Integrated Assembly + Post-processing
+    └─ Verkko2: Graph algorithms + optional DL modules (DeepPolisher / DeepVariant)
