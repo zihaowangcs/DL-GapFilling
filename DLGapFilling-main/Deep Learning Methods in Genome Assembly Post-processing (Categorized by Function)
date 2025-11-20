@@ -1,0 +1,59 @@
+Deep Learning Methods in Genome Assembly Post-processing (Categorized by Function)
+1. Polishing (Error Correction)
+PEPPER–Margin–DeepVariant
+•	Method: CNN + RNN (LSTM) + Attention
+•	PEPPER: Uses CNN/RNN to generate candidate bases from ONT raw signals
+•	Margin: Performs phasing using an RNN-based Hidden Markov Model (HMM)
+•	DeepVariant: A CNN classifier designed by Google, treating reads pileup as “images” for base prediction
+NextPolish / NextPolish2
+•	Method: Candidate base scoring model based on neural networks (includes deep learning filtering module)
+•	Note: The DL module is mainly used for error pattern recognition and iterative correction strategies (non-traditional CNN/RNN)
+DeepConsensus
+•	Method: Transformer / Attention Network
+•	Description: PacBio official tool, learns sequencing error patterns from subreads using attention models to generate high-accuracy CCS sequences
+Apollo
+•	Method: CNN + Transformer
+•	Extracts features from pileup for base prediction and structural error detection
+DeepPolisher
+•	Method: CNN
+•	Uses reads pileup as input, treats local sequences as 2D matrices for per-base correction
+________________________________________
+2. Basecalling (Critical Step Affecting Post-processing)
+Dorado
+•	Method: Transformer
+•	ONT’s latest basecaller, improves accuracy from signal to bases
+Bonito
+•	Method: CTC + CNN/RNN
+•	Uses convolution + bidirectional RNN (GRU/LSTM) for signal modeling
+Chiron
+•	Method: CNN + RNN + CTC
+•	One of the earliest end-to-end deep learning basecallers, using 5 layers of CNN+RNN to parse raw signal
+________________________________________
+3. Gap Closing (Filling Missing Regions)
+GAPpredict
+•	Method: LSTM
+•	Predicts missing sequences based on sequences flanking the gap
+DLGapcloser
+•	Method: BiLSTM + homologous sequence mapping network
+•	Uses homology-based sequence alignment information + deep learning to predict gap sequences
+DL-GapFilling
+•	Method: CNN + BiLSTM + BSCEA + homologous sequence mapping network
+•	Combines CNN and BiLSTM with BSCEA prediction algorithm to predict gap sequences
+•	Applies PredictionFilter to further improve accuracy
+________________________________________
+4. Haplotype Phasing
+DeepTrio
+•	Method: CNN (trio version of DeepVariant)
+•	Uses parent–child trio data for phasing prediction, improving phased accuracy
+________________________________________
+5. Contamination Removal
+DeepMicrobes
+•	Method: CNN + Attention
+•	Performs microbial classification of reads, directly predicting contaminant sources using deep learning
+________________________________________
+6. Integrated Assembly + Post-processing (Including Deep Learning Modules)
+Verkko2
+•	Method: Includes optional deep learning-assisted modules (e.g., DeepPolisher / DeepVariant pipeline)
+•	Performs end-to-end assembly, gap filling, and phasing
+•	Key advantage: integrates graph algorithms with deep learning polishing
+
